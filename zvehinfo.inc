@@ -307,7 +307,7 @@ static gVehicleInfo[212][e_ZVEHICLE_INFO] = {
 
 stock GetVehicleModelType(model)
 {
-	if (611 < model < 400) {
+	if (!(400 < model < 611)) {
 		return -1;
 	}
 
@@ -325,7 +325,7 @@ stock GetVehicleType(vehicleid)
 
 stock GetVehicleModelCategory(model)
 {
-	if (611 < model < 400) {
+	if (!(400 < model < 611)) {
 		return -1;
 	}
 
@@ -343,7 +343,7 @@ stock GetVehicleCategory(vehicleid)
 
 stock GetVehicleModelMaxVelocity(model)
 {
-	if (611 < model < 400) {
+	if (!(400 < model < 611)) {
 		return -1;
 	}
 
@@ -361,7 +361,7 @@ stock GetVehicleMaxVelocity(vehicleid)
 
 stock GetVehicleModelName(model, name[], size = sizeof(name))
 {
-	if (611 < model < 400) {
+	if (!(400 < model < 611)) {
 		return -1;
 	}
 
